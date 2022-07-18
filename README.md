@@ -1,5 +1,6 @@
 # Rust regex explanations in PWA
 
+**Rust regex explanations in PWA**  
 ***version: 2020.810.640  date: 2020-08-10 author: [bestia.dev](https://bestia.dev) repository: [GitHub](https://github.com/bestia-dev/rust_regex_explanation_pwa)***  
 
 [comment]: # (lmake_cargo_toml_to_md end)

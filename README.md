@@ -16,7 +16,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/bestia-dev/rust_regex_explanation_pwa/blob/master/LICENSE)
 [![Rust](https://github.com/bestia-dev/rust_regex_explanation_pwa/workflows/RustAction/badge.svg)](https://github.com/bestia-dev/rust_regex_explanation_pwa/)
-![Hits](https://bestia.dev/webpage_hit_counter/get_svg_image/632662465)
+![Hits](https://bestia.dev/webpage_hit_counter/get_svg_image/632662465.svg)
 
 Hashtags: #rustlang #tutorial #regex #pwa  
 My projects on Github are more like a tutorial than a finished product: [bestia-dev tutorials](https://github.com/bestia-dev/tutorials_rust_wasm).

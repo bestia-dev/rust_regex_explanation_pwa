@@ -3,23 +3,23 @@
 **Rust regex explanations in PWA**  
 ***version: 2020.810.640  date: 2020-08-10 author: [bestia.dev](https://bestia.dev) repository: [GitHub](https://github.com/bestia-dev/rust_regex_explanation_pwa)***  
 
-[comment]: # (lmake_cargo_toml_to_md end)
+[//]: # (auto_cargo_toml_to_md end)
 
-![status](https://img.shields.io/badge/maintained-green) 
-![status](https://img.shields.io/badge/ready_for_use-green) 
+ ![maintained](https://img.shields.io/badge/maintained-green)
+ ![statusready_for_use](https://img.shields.io/badge/ready_for_use-green)
 
-[comment]: # (lmake_lines_of_code start)
+[//]: # (auto_lines_of_code start)
 [![Lines in Rust code](https://img.shields.io/badge/Lines_in_Rust-1474-green.svg)](https://github.com/bestia-dev/rust_regex_explanation_pwa/)
 [![Lines in Doc comments](https://img.shields.io/badge/Lines_in_Doc_comments-156-blue.svg)](https://github.com/bestia-dev/rust_regex_explanation_pwa/)
 [![Lines in Comments](https://img.shields.io/badge/Lines_in_comments-149-purple.svg)](https://github.com/bestia-dev/rust_regex_explanation_pwa/)
 [![Lines in examples](https://img.shields.io/badge/Lines_in_examples-0-yellow.svg)](https://github.com/bestia-dev/rust_regex_explanation_pwa/)
 [![Lines in tests](https://img.shields.io/badge/Lines_in_tests-0-orange.svg)](https://github.com/bestia-dev/rust_regex_explanation_pwa/)
 
-[comment]: # (lmake_lines_of_code end)
+[//]: # (auto_lines_of_code end)
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/bestia-dev/rust_regex_explanation_pwa/blob/master/LICENSE)
-[![Rust](https://github.com/bestia-dev/rust_regex_explanation_pwa/workflows/RustAction/badge.svg)](https://github.com/bestia-dev/rust_regex_explanation_pwa/)
-![Hits](https://bestia.dev/webpage_hit_counter/get_svg_image/632662465.svg)
+ [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/bestia-dev/rust_regex_explanation_pwa/blob/master/LICENSE)
+ [![Rust](https://github.com/bestia-dev/rust_regex_explanation_pwa/workflows/RustAction/badge.svg)](https://github.com/bestia-dev/rust_regex_explanation_pwa/)
+ ![rust_regex_explanation_pwa](https://bestia.dev/webpage_hit_counter/get_svg_image/632662465.svg)
 
 Hashtags: #rustlang #tutorial #regex #pwa  
 My projects on Github are more like a tutorial than a finished product: [bestia-dev tutorials](https://github.com/bestia-dev/tutorials_rust_wasm).
@@ -85,7 +85,7 @@ Copy/paste and then edit the colors and watch changes alive:
 }
 ```
 
-[comment]: # (lmake_md_to_doc_comments segment end A)
+[//]: # (auto_md_to_doc_comments segment end A)
 
 ## Development
 

@@ -85,8 +85,6 @@ Copy/paste and then edit the colors and watch changes alive:
 }
 ```
 
-[//]: # (auto_md_to_doc_comments segment end A)
-
 ## Development
 
 We will need a web file server because security does not allow loading modules from local file.  

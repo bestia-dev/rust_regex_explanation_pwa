@@ -11,38 +11,38 @@ description = "help for prepared make tasks"
 clear = true
 script= [
 "clear",
-"echo ",
-"echo ORDER OF EXECUTING MAKE TASKS:",
-"echo ",
-"echo     clear - clear the screen",
-"echo     cargo make - this list",
-"echo 01. ..... change your code in the editor",
-"echo 02. cargo make dev - build developer versions",
-"echo 02a. or cargo make dev_and_run - build and run developer versions",
-"echo 03. cargo make run_dev0 - run the developer build",
-"echo 04. cargo make test - test the test code",
-"echo 05. cargo make increment_minor - if needed increment semver minor",
-"echo 06. cargo make release - build release version, increment semver patch in cargo.toml",
-"echo 06a. or cargo make release_and_run - build and run release version, increment semver patch in cargo.toml",
-"echo 07. cargo make run_rel0 - run the release build",
-"echo ",
-"echo 08. cargo make doc - includes from cargo.toml to README.md and from README.md to main.rs or lib.rs, generates doc and copies to docs folder, exports codetour to .md.",
-"echo 09. cargo make commit commit_message - git commit ",
-"echo 10. cargo make sshadd - run only once - adds identity to ssh-agent for git and publish",
-"echo 11. cargo make gitpush - git push",
-"echo 12. cargo make publish_to_web",
-"echo OR ",
-"echo 12. cargo make crates_io_dry_run - prepare publishing for crates.io",
-"echo 13. cargo make crates_io_publish - gittag and publish to crates.io",
-"echo ",
-"echo LIST PREPARED RUN WITH ARGUMENTS - separate debug and release versions",
-"echo cargo make run_dev0 - no arguments - target/debug/${CARGO_MAKE_CRATE_NAME}",
-"echo cargo make run_rel0 - no arguments - target/release/${CARGO_MAKE_CRATE_NAME}",
-"echo cargo make run_rel1 - target/release/${CARGO_MAKE_CRATE_NAME} argument1",
-"echo ",
-"echo CREV - always verify you dependencies",
-"echo cargo crev verify",
-"echo "
+"printf ",
+"printf ORDER OF EXECUTING MAKE TASKS:",
+"printf ",
+"printf     clear - clear the screen",
+"printf     cargo make - this list",
+"printf 01. ..... change your code in the editor",
+"printf 02. cargo make dev - build developer versions",
+"printf 02a. or cargo make dev_and_run - build and run developer versions",
+"printf 03. cargo make run_dev0 - run the developer build",
+"printf 04. cargo make test - test the test code",
+"printf 05. cargo make increment_minor - if needed increment semver minor",
+"printf 06. cargo make release - build release version, increment semver patch in cargo.toml",
+"printf 06a. or cargo make release_and_run - build and run release version, increment semver patch in cargo.toml",
+"printf 07. cargo make run_rel0 - run the release build",
+"printf ",
+"printf 08. cargo make doc - includes from cargo.toml to README.md and from README.md to main.rs or lib.rs, generates doc and copies to docs folder, exports codetour to .md.",
+"printf 09. cargo make commit commit_message - git commit ",
+"printf 10. cargo make sshadd - run only once - adds identity to ssh-agent for git and publish",
+"printf 11. cargo make gitpush - git push",
+"printf 12. cargo make publish_to_web",
+"printf OR ",
+"printf 12. cargo make crates_io_dry_run - prepare publishing for crates.io",
+"printf 13. cargo make crates_io_publish - gittag and publish to crates.io",
+"printf ",
+"printf LIST PREPARED RUN WITH ARGUMENTS - separate debug and release versions",
+"printf cargo make run_dev0 - no arguments - target/debug/${CARGO_MAKE_CRATE_NAME}",
+"printf cargo make run_rel0 - no arguments - target/release/${CARGO_MAKE_CRATE_NAME}",
+"printf cargo make run_rel1 - target/release/${CARGO_MAKE_CRATE_NAME} argument1",
+"printf ",
+"printf CREV - always verify you dependencies",
+"printf cargo crev verify",
+"printf "
 ]
 
 # end of help
@@ -54,9 +54,9 @@ description = "cargo check --release"
 clear = true
 script = [
     "clear",
-    "echo $ cargo fmt",
+    "printf $ cargo fmt",
     "cargo fmt",
-    "echo $ cargo check --release",
+    "printf $ cargo check --release",
     "cargo check --release",
 ]
 
@@ -65,11 +65,11 @@ description = "wasm-pack build --target web --dev "
 clear = true
 script = [
     "clear",
-    "echo $ cargo fmt",
+    "printf $ cargo fmt",
     "cargo fmt",
-    "echo $ wasm-pack build --target web --dev ",
+    "printf $ wasm-pack build --target web --dev ",
     "wasm-pack build --target web --dev ",
-    "echo $ rsync -a --info=progress2 --delete-after pkg/ web_server_folder/web_content_folder/pkg/",
+    "printf $ rsync -a --info=progress2 --delete-after pkg/ web_server_folder/web_content_folder/pkg/",
     "rsync -a --info=progress2 --delete-after pkg/ web_server_folder/web_content_folder/pkg/",
 ]
 
@@ -86,7 +86,7 @@ description = "cargo test"
 clear = true
 script = [
     "clear",
-    "echo $ cargo test",
+    "printf $ cargo test",
     "cargo test",
 ]
 
@@ -96,16 +96,16 @@ clear = true
 script = [
     "clear",
     # Binaries version is date
-    "echo $ lmake_version_from_date",
+    "printf $ lmake_version_from_date",
     "lmake_version_from_date",
     # Library version is semver
-    # "echo $ lmake_semver --increment=patch",
+    # "printf $ lmake_semver --increment=patch",
     # "lmake_semver --increment=patch",
-    "echo $ cargo fmt",
+    "printf $ cargo fmt",
     "cargo fmt",
-    "echo $ wasm-pack build --target web --release ",
+    "printf $ wasm-pack build --target web --release ",
     "wasm-pack build --target web --release ",
-    "echo $ rsync -a --info=progress2 --delete-after pkg/ web_server_folder/web_content_folder/pkg/",
+    "printf $ rsync -a --info=progress2 --delete-after pkg/ web_server_folder/web_content_folder/pkg/",
     "rsync -a --info=progress2 --delete-after pkg/ web_server_folder/web_content_folder/pkg/",
 ]
 
@@ -121,7 +121,7 @@ dependencies = [
 description = "no-argument - target/debug/${CARGO_MAKE_CRATE_NAME}"
 clear = true
 script = [
-    "echo $ target/debug/${CARGO_MAKE_CRATE_NAME}",
+    "printf $ target/debug/${CARGO_MAKE_CRATE_NAME}",
     "target/debug/${CARGO_MAKE_CRATE_NAME}",
 ]
 
@@ -129,7 +129,7 @@ script = [
 description = "no-argument - target/release/${CARGO_MAKE_CRATE_NAME}"
 clear = true
 script = [
-    "echo $ target/release/${CARGO_MAKE_CRATE_NAME}",
+    "printf $ target/release/${CARGO_MAKE_CRATE_NAME}",
     "target/release/${CARGO_MAKE_CRATE_NAME}",
 ]
 
@@ -138,7 +138,7 @@ description = "target/release/${CARGO_MAKE_CRATE_NAME} argument1"
 clear = true
 script = [
     "clear",
-    "echo $ target/release/${CARGO_MAKE_CRATE_NAME} argument1",
+    "printf $ target/release/${CARGO_MAKE_CRATE_NAME} argument1",
     "target/release/${CARGO_MAKE_CRATE_NAME} argument1",
 ]
 
@@ -159,26 +159,26 @@ description = "cargo doc - create docs from doc comments"
 clear = true
 script= [
     "clear",
-    "echo $ lmake_lines_of_code",
+    "printf $ lmake_lines_of_code",
     "lmake_lines_of_code",
-    "echo $ lmake_cargo_toml_to_md",
+    "printf $ lmake_cargo_toml_to_md",
     "lmake_cargo_toml_to_md",
-    "echo $ lmake_md_to_doc_comments",
+    "printf $ lmake_md_to_doc_comments",
     "lmake_md_to_doc_comments",
-    "echo $ cargo doc --no-deps --document-private-items",
+    "printf $ cargo doc --no-deps --document-private-items",
     # create doc from doc comments
     "cargo doc --no-deps --document-private-items",
-    "echo $ codetour_export_to_md",
+    "printf $ codetour_export_to_md",
     # export code tour to md
     "codetour_export_to_md",
     # copy to /docs/ because it is github standard
-    "echo $ rsync -a --info=progress2 --delete-after target/doc/ docs/",
+    "printf $ rsync -a --info=progress2 --delete-after target/doc/ docs/",
     "rsync -a --info=progress2 --delete-after target/doc/ docs/",
     # create simple index.html file in docs folder
-    "echo create simple index.html file in docs folder",
-    "echo \"<meta http-equiv=\\\"refresh\\\" content=\\\"0; url=${CARGO_MAKE_CRATE_NAME}/index.html\\\" />\" > docs/index.html",
+    "printf create simple index.html file in docs folder",
+    "printf \"<meta http-equiv=\\\"refresh\\\" content=\\\"0; url=${CARGO_MAKE_CRATE_NAME}/index.html\\\" />\" > docs/index.html",
     # message to help user with next move
-    "echo after successful doc, run cargo make commit msg_for_commit",
+    "printf after successful doc, run cargo make commit msg_for_commit",
 ]
 
 [tasks.commit]
@@ -186,13 +186,13 @@ description = "cargo fmt and git commit"
 clear = true
 script = [
     "clear",
-    "echo $ cargo fmt",
+    "printf $ cargo fmt",
     "cargo fmt",
-    "echo $ git add -A",
+    "printf $ git add -A",
     "git add -A",
-    "echo $ git commit -a -m \"${@}\"",
+    "printf $ git commit -a -m \"${@}\"",
     "git commit -a -m \"${@}\"",
-    "echo after successful fmt and git commit, run $ cargo make gitpush",
+    "printf after successful fmt and git commit, run $ cargo make gitpush",
 ]
 
 [tasks.amend]
@@ -200,13 +200,13 @@ description = "git --amend to last commit for small changes and corrections"
 clear = true
 script = [
     "clear",
-    "echo $ cargo fmt",
+    "printf $ cargo fmt",
     "cargo fmt",
-    "echo $ git add .",
+    "printf $ git add .",
     "git add .",
-    "echo $ git commit --amend",
+    "printf $ git commit --amend",
     "git commit --amend",
-    "echo after successful git commit, run $ cargo make gitpush",
+    "printf after successful git commit, run $ cargo make gitpush",
 ]
 
 [tasks.sshadd]
@@ -222,9 +222,9 @@ description = "push the commits to github, uses ssh agent"
 clear = true
 script = [
     "clear",
-    "echo $ git push",
+    "printf $ git push",
     "git push",
-    "echo after successful git push, use $ cargo make crates_io_dry_run or publish_to_web",
+    "printf after successful git push, use $ cargo make crates_io_dry_run or publish_to_web",
 ]
 
 [tasks.publish_to_web]
@@ -235,12 +235,12 @@ clear = true
 # and then another time I have to escape the backslash. So 4 backslash for one backslash.
 script = [
     "clear",
-    "echo ",
-    "echo $ git tag -f -a v${CARGO_MAKE_CRATE_VERSION} -m version_${CARGO_MAKE_CRATE_VERSION}",
+    "printf ",
+    "printf $ git tag -f -a v${CARGO_MAKE_CRATE_VERSION} -m version_${CARGO_MAKE_CRATE_VERSION}",
     "git tag -f -a v${CARGO_MAKE_CRATE_VERSION} -m version_${CARGO_MAKE_CRATE_VERSION}",
-    "echo $ rsync -a --info=progress2 --delete-after /mnt/c/Users/Luciano/rustprojects/rust_regex_explanation_pwa/web_server_folder/web_content_folder/ /mnt/c/Users/Luciano/rustprojects/googlecloud/var/www/bestia.dev/rust_regex_explanation_pwa/",
+    "printf $ rsync -a --info=progress2 --delete-after /mnt/c/Users/Luciano/rustprojects/rust_regex_explanation_pwa/web_server_folder/web_content_folder/ /mnt/c/Users/Luciano/rustprojects/googlecloud/var/www/bestia.dev/rust_regex_explanation_pwa/",
     "rsync -a --info=progress2 --delete-after /mnt/c/Users/Luciano/rustprojects/rust_regex_explanation_pwa/web_server_folder/web_content_folder/ /mnt/c/Users/Luciano/rustprojects/googlecloud/var/www/bestia.dev/rust_regex_explanation_pwa/",
-    "echo $ rsync -e ssh -a --info=progress2 --delete-after /mnt/c/Users/Luciano/rustprojects/googlecloud/var/www/bestia.dev/rust_regex_explanation_pwa/ luciano_bestia@bestia.dev:/var/www/bestia.dev/rust_regex_explanation_pwa/",
+    "printf $ rsync -e ssh -a --info=progress2 --delete-after /mnt/c/Users/Luciano/rustprojects/googlecloud/var/www/bestia.dev/rust_regex_explanation_pwa/ luciano_bestia@bestia.dev:/var/www/bestia.dev/rust_regex_explanation_pwa/",
     "rsync -e ssh -a --info=progress2 --delete-after /mnt/c/Users/Luciano/rustprojects/googlecloud/var/www/bestia.dev/rust_regex_explanation_pwa/ luciano_bestia@bestia.dev:/var/www/bestia.dev/rust_regex_explanation_pwa/",
 ]
 
@@ -253,9 +253,9 @@ clear = true
 description = "prepare before publishing to crates.io with dry-run"
 script = [
     "clear",
-    "echo $ cargo publish --dry-run",
+    "printf $ cargo publish --dry-run",
     "cargo publish --dry-run",
-    "echo after successful dry-run, use $ cargo make crates_io_publish",
+    "printf after successful dry-run, use $ cargo make crates_io_publish",
 ]
 
 [tasks.crates_io_publish]
@@ -264,10 +264,10 @@ description = "gittag and publish to crates.io"
 script = [
     "clear",
     # gittag
-    "echo $ git tag -f -a v${CARGO_MAKE_CRATE_VERSION} -m version_${CARGO_MAKE_CRATE_VERSION}",
+    "printf $ git tag -f -a v${CARGO_MAKE_CRATE_VERSION} -m version_${CARGO_MAKE_CRATE_VERSION}",
     "git tag -f -a v${CARGO_MAKE_CRATE_VERSION} -m version_${CARGO_MAKE_CRATE_VERSION}",
     # cargo publish
-    "echo $ cargo publish",
+    "printf $ cargo publish",
     "cargo publish",
 ]
 

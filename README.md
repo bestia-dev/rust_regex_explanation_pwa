@@ -20,7 +20,7 @@
 [//]: # (auto_lines_of_code end)
 
  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/bestia-dev/rust_regex_explanation_pwa/blob/master/LICENSE)
- [![Rust](https://github.com/bestia-dev/rust_regex_explanation_pwa/workflows/RustAction/badge.svg)](https://github.com/bestia-dev/rust_regex_explanation_pwa/)
+ [![Rust](https://github.com/bestia-dev/rust_regex_explanation_pwa/workflows/rust_fmt_auto_build_test/badge.svg)](https://github.com/bestia-dev/rust_regex_explanation_pwa/)
  ![rust_regex_explanation_pwa](https://bestia.dev/webpage_hit_counter/get_svg_image/632662465.svg)
 
 Hashtags: #rustlang #tutorial #regex #pwa  

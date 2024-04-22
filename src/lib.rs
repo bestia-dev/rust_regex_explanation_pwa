@@ -10,7 +10,7 @@
 //! [![Lines in examples](https://img.shields.io/badge/Lines_in_examples-0-yellow.svg)](https://github.com/bestia-dev/rust_regex_explanation_pwa/)
 //! [![Lines in tests](https://img.shields.io/badge/Lines_in_tests-0-orange.svg)](https://github.com/bestia-dev/rust_regex_explanation_pwa/)
 //!
-//! [![Licence](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/bestia-dev/rust_regex_explanation_pwa/blob/master/LICENSE) [![Rust](https://github.com/bestia-dev/rust_regex_explanation_pwa/workflows/RustAction/badge.svg)](https://github.com/bestia-dev/rust_regex_explanation_pwa/)
+//! [![Licence](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/bestia-dev/rust_regex_explanation_pwa/blob/master/LICENSE) [![Rust](https://github.com/bestia-dev/rust_regex_explanation_pwa/workflows/rust_fmt_auto_build_test/badge.svg)](https://github.com/bestia-dev/rust_regex_explanation_pwa/)
 //!
 //! ## Try it
 //!

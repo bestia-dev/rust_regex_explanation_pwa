@@ -8,6 +8,7 @@ description = "Rust regex explanations in PWA"
 repository = "https://github.com/LucianoBestia/rust_regex_explanation_pwa"
 readme = "README.md"
 license = "MIT"
+# Keyword must be only one word: lowercase letters, hyphens(-) or numbers, less then 35 characters, at most 5 keywords per crate
 keywords = ["wasm"]
 categories = []
 publish = false
